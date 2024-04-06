@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-
+import ProductoPagPrincipal from "./components/ProductoPagPrincipal/page";
 export default function Home() {
   const [carrito, setCarrito] = useState(false);
   return (
@@ -428,6 +428,31 @@ export default function Home() {
               </div>
             </div>
             {/* Fin Derecho */}
+          </div>
+          <div className="mt-16">
+            <h3 className="text-gray-600 text-2xl font-medium">Línea Adidas</h3>
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+              <ProductoPagPrincipal
+                titulo="TENIS ADIDAS VL COURT 3.0"
+                imagen="bg-[url('/Zapatillas/Adidas/VL_Court_3_Blanco.avif')]"
+                costo="$329.950"
+              />
+              <ProductoPagPrincipal
+                titulo="TENIS SAMBA OG"
+                imagen="bg-[url('/Zapatillas/Adidas/Samba_OG_Negro.avif')]"
+                costo="$599.950"
+              />
+              <ProductoPagPrincipal
+                titulo="TENIS ADIZERO ADIOS PRO 3"
+                imagen="bg-[url('/Zapatillas/Adidas/ADIZERO_ADIOS_PRO_3.avif')]"
+                costo="$1.299.950"
+              />
+              <ProductoPagPrincipal
+                titulo="TENIS COURTBLOCK"
+                imagen="bg-[url('/Zapatillas/Adidas/Courtblock_Blanco.avif')]"
+                costo="$315.961"
+              />
+            </div>
           </div>
         </div>
       </main>
