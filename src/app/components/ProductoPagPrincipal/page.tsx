@@ -1,11 +1,10 @@
-import Image from "next/image";
 import React from "react";
-export type props = {
-  titulo: string;
-  imagen: string;
-  costo: string;
-};
-function ProductoPagPrincipal({ titulo, imagen, costo }: props) {
+// export type datos = {
+//   titulo: any;
+//   imagen: any;
+//   costo: any;
+// };
+function ProductoPagPrincipal({ titulo, imagen = "", costo = "" }: any) {
   return (
     <>
       <div className="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
@@ -30,8 +29,8 @@ function ProductoPagPrincipal({ titulo, imagen, costo }: props) {
           </button>
         </div>
         <div className="px-5 py-3">
-          <h3 className="text-gray-700 uppercase">{titulo}</h3>
-          <span className="text-gray-500 mt-2">{costo}</span>
+          <h3 className="text-gray-700 uppercase">{titulo || ""}</h3>
+          <span className="text-gray-500 mt-2">{costo || ""}</span>
         </div>
         {/* Fin Produco */}
       </div>
